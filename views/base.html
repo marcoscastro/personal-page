@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Welcome! ;)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="/"><img src="user.jpg" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="/" class="active"><i class="icon-user"></i> Home</a></li>
+        <li><a href="skills"><i class="icon-trophy"></i> Skills</a></li>
+        <li><a href="courses"><i class="icon-picture"></i> Courses</a></li>
+        <li><a href="about"><i class="icon-doc-text"></i> About me</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+{{!base}}
+<div class="row social">
+  <ul class="social-icons">
+    <li><a href="https://www.facebook.com/TheLifelongTeacher" target="_blank"><img src="fb.png" alt=""></a></li>
+    <li><a href="https://www.youtube.com/c/marcoscastrosouza" target="_blank"><img src="yt.png" alt=""></a></li>
+    <li><a href="https://twitter.com/mcastrosouza" target="_blank"><img src="tw.png" alt=""></a></li>
+    <li><a href="https://github.com/marcoscastro" target="_blank"><img src="github.png" alt=""></a></li>
+  </ul>
+</div>
+<div class="footer" href="bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <div class="container">
+    <p class="pull-left"><a href="http://mcastrosouza.com">mcastrosouza.com</a> - Made with Python and a little coffee.</p>
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> Contact me</a></p>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> Contact me</h3>
+  </div>
+  <div class="modal-body">
+    <form action="#">
+      <input type="text" placeholder="Seu nome">
+      <input type="text" placeholder="Seu e-mail">
+      <input type="text" placeholder="Site (opcional)">
+      <textarea rows="3" style="width:80%"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> Enviar</button>
+    </form>
+  </div>
+</div>
+<script src="jquery-1.10.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+</body>
+</html>
