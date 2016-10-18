@@ -1,8 +1,7 @@
 from bottle import route, run
 from bottle import static_file, request
 from bottle import template, get, error
-
-DEBUG = False
+import os
 
 # static routes
 @get('/<filename:re:.*\.css>')
@@ -51,4 +50,8 @@ def error404(error):
 	return template('oops')
 
 if __name__ == "__main__":
-	run(host='localhost', port=8080, reloader=DEBUG, debug=DEBUG)
+	if os.environ.get('APP_LOCATION') == 'heroku':
+		run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+	else:
+		print('ENTROU AQUI')
+		run(host='localhost', port=8080, debug=True, reloader=True)
