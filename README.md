@@ -5,4 +5,6 @@ I used the cloud platform Heroku.
 
 Python + Bottle = happiness ;-)
 
+This tutorial helped me for deploy: [https://github.com/chucknado/bottle_heroku_tutorial](click here)
+
 You can use and do what you want! Doubts? mcastrosouza@live.com
