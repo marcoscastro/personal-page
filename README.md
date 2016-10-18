@@ -1,5 +1,5 @@
 # My personal page
-My personal page made with Python language and web framework Bottle.
+My personal page made with Python language and Bottle (web-framework for Python).
 
 Python + Bottle = happiness ;-)
 
