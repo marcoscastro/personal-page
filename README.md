@@ -17,7 +17,7 @@ I bought the domain at Godday, setup Heroku and Godaddy:
 
 4. Remove the CNAME record named 'www' (which points to @)
 
-5. Click 'Add record' -> CNAME(Alias) -> 'Host' should be www and 'Points to' should be your Heroku address (example example.herokuapp.com). TTL can be 1 hour.
+5. Click 'Add record' -> CNAME(Alias) -> 'Host' should be www and 'Points to' should be your Heroku address (example.herokuapp.com). TTL can be 1 hour.
 
 It can take some time for the DNS to propogate. For me it took about 10 minutes.
 
